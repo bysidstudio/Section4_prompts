@@ -55,12 +55,12 @@
     Warm, never soft. Direct, never blunt. Calm, never dull. Don't pair
     unrelated ideas, "Confident, never boring" fails because boring isn't
     the failure mode of confidence. Pair them in order: Trait 01 with
-    Never Become 01, Trait 02 with 02, Trait 03 with 03. Use the client's
-    own avoid-words from the Brief where they fit, only when they create a
-    meaningful boundary. A strong personality does two things: tells the
-    designer what to express, and what to avoid. Don't pick three positive
-    adjectives with three unrelated negatives, the pairs must form one
-    coherent behavioural system.
+    Never Become 01, Trait 02 with 02, Trait 03 with 03, Trait 04 with 04,
+    Trait 05 with 05. Use the client's own avoid-words from the Brief
+    where they fit, only when they create a meaningful boundary. A strong
+    personality does two things: tells the designer what to express, and
+    what to avoid. Don't pick five positive adjectives with five unrelated
+    negatives, the pairs must form one coherent behavioural system.
   </trait_never_become_rule>
 
   <visually_verbally_rule>
@@ -75,7 +75,7 @@
 
   <archetype_rule>
     Develop the Primary Archetype last, from the personality, never the
-    other way around. First establish the three traits and their Never
+    other way around. First establish the five traits and their Never
     Become boundaries, then determine which recognised archetype best
     captures the combined personality, the strategic shorthand for what's
     already there. Choose the archetype that fits the evidence, not the
@@ -91,7 +91,7 @@
     clarity, authority, decisiveness), Leads With Warmth (the brand is
     alongside the customer, traits build approachability, honesty,
     reassurance). Don't force Certainty vs. Warmth if the evidence points
-    elsewhere. Only split into two if at least two of the three traits
+    elsewhere. Only split into two if at least three of the five traits
     genuinely differ, the Never Become boundaries change meaningfully, the
     Visually/Verbally lines give different instructions, and a designer
     would make meaningfully different brand decisions depending on the
@@ -140,9 +140,13 @@
     <field name="Personality Trait 01" target="1-2" hard_max="2"/>
     <field name="Personality Trait 02" target="1-2" hard_max="2"/>
     <field name="Personality Trait 03" target="1-2" hard_max="2"/>
+    <field name="Personality Trait 04" target="1-2" hard_max="2"/>
+    <field name="Personality Trait 05" target="1-2" hard_max="2"/>
     <field name="Never Become 01" target="1-2" hard_max="2"/>
     <field name="Never Become 02" target="1-2" hard_max="2"/>
     <field name="Never Become 03" target="1-2" hard_max="2"/>
+    <field name="Never Become 04" target="1-2" hard_max="2"/>
+    <field name="Never Become 05" target="1-2" hard_max="2"/>
     <field name="Visually" target="10-15" hard_max="15"/>
     <field name="Verbally" target="10-15" hard_max="15"/>
     <field name="Primary Archetype" target="1-2" hard_max="2" note="or N/A"/>
@@ -159,11 +163,11 @@
   </fields>
 
   <before_answering_check>
-    Silently confirm: the three Traits follow from the approved strategy,
+    Silently confirm: the five Traits follow from the approved strategy,
     not personal taste; each Trait is specific enough to mean something
     for this brand, not a generic adjective; every Never Become is the
-    genuine failure mode of its matching Trait, paired in order; the three
-    pairs form one coherent behavioural system, not three unrelated
+    genuine failure mode of its matching Trait, paired in order; the five
+    pairs form one coherent behavioural system, not five unrelated
     pairs; the Visually and Verbally lines are actionable constraints, not
     generic description; personality supports the approved Positioning
     and Value Proposition and stays consistent with Core Values; it
@@ -186,6 +190,8 @@
     **Trait 01:** [text] - never [Never Become 01]
     **Trait 02:** [text] - never [Never Become 02]
     **Trait 03:** [text] - never [Never Become 03]
+    **Trait 04:** [text] - never [Never Become 04]
+    **Trait 05:** [text] - never [Never Become 05]
     **Visually**
     [text]
     **Verbally**
@@ -228,8 +234,8 @@ Every page after this one needs to know.
 
 **5. Paste your chosen route into these boxes:**
 
-- Personality Trait 01, 02, 03
-- Never Become 01, 02, 03
+- Personality Trait 01, 02, 03, 04, 05
+- Never Become 01, 02, 03, 04, 05
 - Visually
 - Verbally
 - Primary Archetype
