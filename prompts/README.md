@@ -24,3 +24,4 @@ follows them, it just adds tokens.
 
 - `4.1-brand-purpose.xml` - Page 4.1 Brand Purpose
 - `4.2-brand-vision.xml` - Page 4.2 Brand Vision
+- `4.3-core-values.xml` - Page 4.3 Core Values
