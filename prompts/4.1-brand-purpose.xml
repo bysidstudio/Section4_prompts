@@ -111,13 +111,19 @@
   </voice>
 
   <fields>
-    <field name="Purpose Statement" words="30-35"/>
-    <field name="What This Rules Out" words="18-22"/>
-    <field name="How You Will See It" words="25-30"/>
+    <field name="Purpose Statement" target="30-35" hard_max="35"/>
+    <field name="What This Rules Out" target="18-22" hard_max="22"/>
+    <field name="How You Will See It" target="25-30" hard_max="30"/>
     <word_count_rule>
-      If unsure whether you've hit the range, err toward the low end and
-      stop. Never pad with filler, throat-clearing, or a restated clause
-      just to reach the word count, that's the same failure as hedging.
+      The max is a hard rule: these get pasted into a fixed box in the
+      deck, and going over breaks the layout. Never exceed it. The low end
+      of the target is a direction, not a rule: a sharp sentence a few
+      words under target beats one padded with filler, a restated clause,
+      or a hedge just to reach the floor, that's the same failure as
+      hedging. Land inside the target when the content earns it. If it
+      doesn't, stay under the max and let it run a little short, don't pad
+      to close the gap. A precise count isn't guaranteed from this
+      instruction alone, the designer verifies the actual count afterward.
     </word_count_rule>
   </fields>
 
@@ -126,9 +132,10 @@
     specific to this business, not swappable to a competitor; sourced from
     the chat's brief/evidence/approved pages, not invented; if inferred,
     backed by multiple signals; the refusal is a genuine consequence of the
-    purpose; still true if the product range changed; "How You Will See It"
-    is concrete, not a value or tagline; the two routes (if two) are
-    genuinely different foundations. Also check: does the purpose statement
+    purpose; still true if the product range changed; nothing is over its
+    hard max; "How You Will See It" is concrete, not a value or tagline;
+    the two routes (if two) are genuinely different foundations. Also
+    check: does the purpose statement
     only make sense as this specific founder's personal story, with names
     or events swapped in? If you removed the founder's name and the
     sentence still reads as a repeated anecdote rather than a business
@@ -172,7 +179,13 @@ Read the **What This Rules Out** line first.
 If it names something the business would genuinely turn down, the
 purpose above it is probably sound.
 
-**2. Tell me exactly what you used.** If you took one route whole, type
+**2. Run the three boxes through Word Range Check** before you lock
+anything in. Paste each field in, see the exact count against its
+target. If one is over the hard max or badly short, tell me the field
+and the gap (`over by 4` or `short, tighten isn't needed, expand by 3`)
+and I'll rewrite just that field, not the whole route.
+
+**3. Tell me exactly what you used.** If you took one route whole, type
 `Using Route 1` or `Using Route 2`. If you mixed pieces from both, say
 which piece came from where.
 
@@ -180,27 +193,27 @@ Type it in this chat before you move on.
 
 Every page after this one needs to know.
 
-**3. Open your Brand Strategy Presentation.** Go to the page headed
+**4. Open your Brand Strategy Presentation.** Go to the page headed
 **4.1 Brand Purpose**.
 
-**4. Paste your chosen route into these boxes:**
+**5. Paste your chosen route into these boxes:**
 
 - Purpose Statement
 - What This Rules Out
 - How You Will See It
 
-**5. Two quick checks:**
+**6. Two quick checks:**
 
 - Would this purpose still be true if the product or service range
   changed completely? If not, it is describing what they sell.
 - Swap the brand name for another business. Could the purpose still
   work unchanged? If yes, sharpen it.
 
-**6. Open your Decisions document and write one line:**
+**7. Open your Decisions document and write one line:**
 
 > 4.1 Brand Purpose. I chose ______ because ______.
 
-**7. Next step:** Step 2 - page 4.2 Brand Vision.
+**8. Next step:** Step 2 - page 4.2 Brand Vision.
 
 ---
 
