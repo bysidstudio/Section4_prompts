@@ -130,6 +130,14 @@
     or brand characteristics the approved strategy doesn't support.
   </scope_guardrails>
 
+  <freshness_rule>
+    This chat already contains earlier pages of the same presentation. Use
+    them for facts and consistency of meaning, never copy their sentences,
+    opening structures, or phrasing. Write this page fresh. A deck where
+    every page sounds generated is exactly what this system exists to
+    avoid.
+  </freshness_rule>
+
   <voice>
     Write for the client, not a strategist, the way you'd say it to the
     founder across a table. Sentences short, mostly under 20 words, never
