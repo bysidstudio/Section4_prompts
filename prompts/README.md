@@ -10,12 +10,15 @@ forward.
 
 ## Format
 
-Each prompt keeps a real `<inputs>` block (`brand_discovery_brief`,
-`evidence`, `approved_pages`) that you paste content into per run. That's
-the part XML tagging actually earns its keep on, separating data Claude
-reasons from from the instructions it obeys. Everything below `<inputs>`
-is compact instruction text, not further broken into one-line-per-tag XML,
-since that doesn't change how reliably Claude follows it.
+These prompts run inside one ongoing chat, not as isolated per-call
+templates. You paste the Brand Discovery Brief and Evidence once near the
+top of the conversation, then run each page's prompt (4.1, 4.2, 4.3...) as
+a new turn in that same chat. Every later prompt reads the brief, evidence,
+and earlier approved pages straight out of chat history, so nothing gets
+re-pasted per page. Instructions stay compact prose grouped by topic (role,
+routes, voice, output format, etc.) rather than one XML tag per sentence,
+since fragmenting instructions further doesn't change how reliably Claude
+follows them, it just adds tokens.
 
 ## Files
 
