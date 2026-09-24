@@ -23,3 +23,4 @@ follows them, it just adds tokens.
 ## Files
 
 - `4.1-brand-purpose.xml` - Page 4.1 Brand Purpose
+- `4.2-brand-vision.xml` - Page 4.2 Brand Vision
