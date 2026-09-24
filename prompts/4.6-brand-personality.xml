@@ -81,6 +81,19 @@
     already there. Choose the archetype that fits the evidence, not the
     one that sounds most attractive, don't force a fit. If no recognised
     archetype is defensible, write N/A and briefly state why.
+
+    A Secondary Archetype is optional, not standard, and stays N/A by
+    default. Only add one when the Primary genuinely cannot resolve a real
+    tension in the five traits: when a meaningful group of the traits
+    pulls toward one archetype and a different, equally evidenced group
+    pulls toward another, and compressing both into a single archetype
+    would lose something the evidence actually supports. Don't add a
+    Secondary to sound more nuanced, to cover traits that are just
+    variations of the Primary, or because two feels more thorough than
+    one. Test before adding one: which specific traits does the Primary
+    fail to account for, and does the Secondary account for exactly those,
+    not overlap with what the Primary already covers. If you can't name
+    that split, leave it N/A.
   </archetype_rule>
 
   <routes>
@@ -150,6 +163,7 @@
     <field name="Visually" target="10-15" hard_max="15"/>
     <field name="Verbally" target="10-15" hard_max="15"/>
     <field name="Primary Archetype" target="1-2" hard_max="2" note="or N/A"/>
+    <field name="Secondary Archetype" target="1-2" hard_max="2" note="N/A by default, only when the tension test in archetype_rule is met"/>
     <word_count_rule>
       The max is a hard rule: these get pasted into fixed boxes in the
       deck, and going over breaks the layout. Never exceed it. The low end
@@ -173,8 +187,11 @@
     and Value Proposition and stays consistent with Core Values; it
     doesn't slide into detailed creative direction; the Primary Archetype
     was derived from the traits, not the reverse, and is a useful
-    shorthand, or is N/A with a brief reason if no archetype fits; nothing
-    is over its hard max; if two routes are given, they're genuinely
+    shorthand, or is N/A with a brief reason if no archetype fits; the
+    Secondary Archetype is N/A unless a genuine, nameable tension between
+    two distinct groups of traits required it, not added just to seem
+    more thorough; nothing is over its hard max; if two routes are given,
+    they're genuinely
     different, not the same personality in different words. Rewrite
     anything that fails before answering. Never show this check or a word
     count in the output.
@@ -197,6 +214,7 @@
     **Verbally**
     [text]
     **Primary Archetype:** [text or N/A]
+    **Secondary Archetype:** [text or N/A]
 
     **My lean:** Route 1 - [one sentence, strategic reason]
 
@@ -239,6 +257,7 @@ Every page after this one needs to know.
 - Visually
 - Verbally
 - Primary Archetype
+- Secondary Archetype (usually N/A, that's expected, not a gap)
 
 Keep each Never Become paired with the matching Trait.
 
@@ -248,6 +267,9 @@ Keep each Never Become paired with the matching Trait.
   modern, bold or premium, ask me for a real constraint.
 - Do the traits follow from the approved positioning and value
   proposition, or from what you personally like?
+- If a Secondary Archetype was given, could you name the specific
+  traits it covers that the Primary doesn't? If not, ask me to drop it
+  back to N/A.
 
 **7. Open your Decisions document and write one line:**
 
