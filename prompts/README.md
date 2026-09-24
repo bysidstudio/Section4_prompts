@@ -30,3 +30,4 @@ follows them, it just adds tokens.
 - `4.6-brand-personality.xml` - Page 4.6 Brand Personality
 - `4.7-brand-voice.xml` - Page 4.7 Brand Voice
 - `4.8-key-messages.xml` - Page 4.8 Key Messages
+- `4.9-brand-strategy-summary.xml` - Page 4.9 Brand Strategy Summary
