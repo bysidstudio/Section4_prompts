@@ -29,3 +29,4 @@ follows them, it just adds tokens.
 - `4.5-value-proposition.xml` - Page 4.5 Value Proposition
 - `4.6-brand-personality.xml` - Page 4.6 Brand Personality
 - `4.7-brand-voice.xml` - Page 4.7 Brand Voice
+- `4.8-key-messages.xml` - Page 4.8 Key Messages
