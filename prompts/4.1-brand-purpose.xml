@@ -114,18 +114,27 @@
     <field name="Purpose Statement" words="30-35"/>
     <field name="What This Rules Out" words="18-22"/>
     <field name="How You Will See It" words="25-30"/>
+    <word_count_rule>
+      If unsure whether you've hit the range, err toward the low end and
+      stop. Never pad with filler, throat-clearing, or a restated clause
+      just to reach the word count, that's the same failure as hedging.
+    </word_count_rule>
   </fields>
 
   <before_answering_check>
     Silently confirm: explains why the business exists beyond selling;
     specific to this business, not swappable to a competitor; sourced from
     the chat's brief/evidence/approved pages, not invented; if inferred,
-    backed by multiple signals; the
-    refusal is a genuine consequence of the purpose; still true if the
-    product range changed; "How You Will See It" is concrete, not a value
-    or tagline; the two routes (if two) are genuinely different foundations.
-    Rewrite anything that fails before answering. Never show this check or
-    a word count in the output.
+    backed by multiple signals; the refusal is a genuine consequence of the
+    purpose; still true if the product range changed; "How You Will See It"
+    is concrete, not a value or tagline; the two routes (if two) are
+    genuinely different foundations. Also check: does the purpose statement
+    only make sense as this specific founder's personal story, with names
+    or events swapped in? If you removed the founder's name and the
+    sentence still reads as a repeated anecdote rather than a business
+    reason, it's repetition, not synthesis, rewrite it. Rewrite anything
+    that fails before answering. Never show this check or a word count in
+    the output.
   </before_answering_check>
 
   <output_format>
