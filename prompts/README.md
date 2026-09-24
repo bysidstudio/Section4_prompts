@@ -27,3 +27,4 @@ follows them, it just adds tokens.
 - `4.3-core-values.xml` - Page 4.3 Core Values
 - `4.4-brand-positioning.xml` - Page 4.4 Brand Positioning
 - `4.5-value-proposition.xml` - Page 4.5 Value Proposition
+- `4.6-brand-personality.xml` - Page 4.6 Brand Personality
