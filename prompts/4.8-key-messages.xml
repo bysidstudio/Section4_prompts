@@ -225,7 +225,7 @@
   </voice>
 
   <fields>
-    <field name="Tagline" target="3-5" hard_max="5"/>
+    <field name="Tagline" target="3-5" hard_max="7"/>
     <field name="One-Liner" target="25-30" hard_max="30"/>
     <field name="Lead With" target="10-15" hard_max="15"/>
     <field name="Then Prove" target="12-16" hard_max="16"/>

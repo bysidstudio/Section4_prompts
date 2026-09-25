@@ -122,7 +122,7 @@
     <field name="Core Values" format="ONE WORD each, five, comma separated" source="4.3"/>
     <field name="Personality" target="6-9" hard_max="9" source="4.6"/>
     <field name="Voice" target="15-20" hard_max="20" source="4.7"/>
-    <field name="Tagline" target="3-5" hard_max="5" source="4.8"/>
+    <field name="Tagline" target="3-5" hard_max="7" source="4.8"/>
     <field name="One-Liner" target="20-25" hard_max="25" source="4.8"/>
     <field name="Reason to Believe" target="20-25" hard_max="25" source="4.5"/>
     <word_count_rule>
