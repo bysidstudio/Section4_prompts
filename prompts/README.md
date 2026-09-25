@@ -37,3 +37,9 @@ follows them, it just adds tokens.
   uploaded PDF and reports up to 3 fixable issues (first check) or
   fixed/still-open status against a prior report (recheck). No routes,
   no word-count fields.
+- `step-1-core-creative-idea.xml` - Section 05, Step 1: reads the same
+  Sections 1-4 PDF and produces one Core Creative Idea for the designer
+  to build Creative Direction A and B from. No routes, no word-count
+  fields, output is prose with strict concrete-vs-abstract rules (must
+  quote exact strategy language, must state position/size, no
+  editorializing after a specific sentence).
