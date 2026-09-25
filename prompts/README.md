@@ -31,3 +31,9 @@ follows them, it just adds tokens.
 - `4.7-brand-voice.xml` - Page 4.7 Brand Voice
 - `4.8-key-messages.xml` - Page 4.8 Key Messages
 - `4.9-brand-strategy-summary.xml` - Page 4.9 Brand Strategy Summary
+- `strategy-check.xml` - Strategy Check: audits a PDF export of Sections
+  01-04 for high-impact problems before Creative Direction. Different
+  shape from the page prompts: it doesn't write brand copy, it reads an
+  uploaded PDF and reports up to 3 fixable issues (first check) or
+  fixed/still-open status against a prior report (recheck). No routes,
+  no word-count fields.
