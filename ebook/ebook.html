@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Brand Strategy Playbook</title>
+<style>
+  @page { size: 6in 9in; margin: 0.8in 0.7in 0.85in 0.7in; }
+  @page :first { margin: 0; }
+  :root { --ink:#1b1b1f; --muted:#666a73; --accent:#c8321e; --line:#d9d9de; --tint:#f4f2ee; }
+  * { box-sizing: border-box; }
+  html { font-family: Georgia, "Times New Roman", serif; font-size: 10.5pt; line-height: 1.5; color: var(--ink); }
+  body { margin: 0; }
+  h1,h2,h3,h4,.sans { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  h1 { font-size: 24pt; line-height: 1.1; margin: 0 0 14pt; letter-spacing: -0.5pt; }
+  h2 { font-size: 13pt; margin: 20pt 0 6pt; color: var(--accent); text-transform: uppercase; letter-spacing: 1pt; break-after: avoid; }
+  h3 { font-size: 11pt; margin: 14pt 0 4pt; break-after: avoid; }
+  p { margin: 0 0 8pt; orphans: 3; widows: 3; }
+  ul, ol { margin: 0 0 8pt; padding-left: 16pt; }
+  li { margin-bottom: 3pt; }
+  .chapter { break-before: page; }
+  .kicker { font-family: Helvetica, Arial, sans-serif; font-size: 9pt; letter-spacing: 2pt; text-transform: uppercase; color: var(--muted); margin-bottom: 6pt; }
+  .lead { font-size: 12pt; line-height: 1.45; color: #333; margin-bottom: 12pt; }
+
+  /* cover */
+  .cover { height: 9in; width: 6in; background: var(--ink); color: #fff; padding: 0.8in 0.7in; break-after: page; display:flex; flex-direction:column; justify-content:space-between; }
+  .cover .kicker { color:#aaa; }
+  .cover h1 { font-size: 38pt; line-height: 1.02; color:#fff; margin-bottom: 14pt; }
+  .cover .sub { font-size: 13pt; color:#ddd; max-width: 4.2in; line-height:1.4; }
+  .cover .rule { width: 60pt; height: 4pt; background: var(--accent); margin: 18pt 0; }
+  .cover .by { font-family: Helvetica, Arial, sans-serif; font-size: 10pt; color:#aaa; letter-spacing:1pt; }
+
+  /* toc */
+  .toc { list-style:none; padding:0; }
+  .toc li { display:flex; gap:10pt; padding:5pt 0; border-bottom:1px solid var(--line); font-family: Helvetica, Arial, sans-serif; font-size:10pt; }
+  .toc .n { width: 26pt; color: var(--accent); font-weight:700; }
+  .toc .t { flex:1; }
+
+  /* components */
+  table { width:100%; border-collapse: collapse; margin: 6pt 0 10pt; font-family: Helvetica, Arial, sans-serif; font-size: 8.5pt; line-height: 1.35; }
+  th { text-align:left; background: var(--ink); color:#fff; padding: 4pt 6pt; font-weight:600; }
+  td { padding: 4pt 6pt; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr { break-inside: avoid; }
+  td.num { white-space:nowrap; text-align:right; }
+  .box { background: var(--tint); border-left: 3pt solid var(--accent); padding: 8pt 10pt; margin: 8pt 0 10pt; break-inside: avoid; }
+  .box .label { font-family: Helvetica, Arial, sans-serif; font-size: 8pt; letter-spacing: 1.5pt; text-transform: uppercase; color: var(--accent); font-weight:700; margin-bottom: 3pt; }
+  .box p:last-child { margin-bottom: 0; }
+  .pair { display:flex; gap:8pt; margin: 6pt 0 10pt; }
+  .pair > div { flex:1; padding: 7pt 9pt; font-size: 9.5pt; break-inside: avoid; }
+  .weak { background:#fbeceb; border-top:3pt solid #b3261e; }
+  .strong { background:#eaf4ec; border-top:3pt solid #2e7d32; }
+  .pair .label { font-family: Helvetica, Arial, sans-serif; font-size: 8pt; letter-spacing:1.5pt; text-transform:uppercase; font-weight:700; margin-bottom:3pt; }
+  code { font-family: "Courier New", monospace; font-size: 9pt; background: var(--tint); padding: 0 2pt; }
+  pre { font-family: "Courier New", monospace; font-size: 8.5pt; background: var(--tint); padding: 8pt; margin: 6pt 0 10pt; white-space: pre-wrap; break-inside: avoid; }
+  .cap { font-family: Helvetica, Arial, sans-serif; font-size: 8.5pt; color: var(--muted); }
+
+  /* running footer via page counter */
+  @page { @bottom-center { content: counter(page); font-family: Helvetica, Arial, sans-serif; font-size: 8pt; color: #888; } }
+  @page :first { @bottom-center { content: none; } }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<section class="cover">
+  <div class="kicker">A working manual for solo brand designers</div>
+  <div>
+    <h1>The Brand Strategy Playbook</h1>
+    <div class="rule"></div>
+    <div class="sub">Nine pages, one chat, no generic decks. How to take a client from Brand Purpose to a cleared strategy using a chain of prompts.</div>
+  </div>
+  <div class="by">BYSIDSTUDIO &nbsp;·&nbsp; BUILT FROM THE SECTION 04 PROMPT SET</div>
+</section>
+
+<!-- CONTENTS -->
+<section class="chapter" style="break-before:auto">
+  <div class="kicker">Contents</div>
+  <h1>What's inside</h1>
+  <ol class="toc">
+    <li><span class="n">00</span><span class="t">Read this first: who this is for and what it assumes</span></li>
+    <li><span class="n">01</span><span class="t">How the system works</span></li>
+    <li><span class="n">02</span><span class="t">The rules every page shares</span></li>
+    <li><span class="n">4.1</span><span class="t">Brand Purpose</span></li>
+    <li><span class="n">4.2</span><span class="t">Brand Vision</span></li>
+    <li><span class="n">4.3</span><span class="t">Core Values</span></li>
+    <li><span class="n">4.4</span><span class="t">Brand Positioning</span></li>
+    <li><span class="n">4.5</span><span class="t">Value Proposition</span></li>
+    <li><span class="n">4.6</span><span class="t">Brand Personality</span></li>
+    <li><span class="n">4.7</span><span class="t">Brand Voice</span></li>
+    <li><span class="n">4.8</span><span class="t">Key Messages</span></li>
+    <li><span class="n">4.9</span><span class="t">Brand Strategy Summary</span></li>
+    <li><span class="n">SC</span><span class="t">The Strategy Check</span></li>
+    <li><span class="n">03</span><span class="t">Where this system can fail (and what to do about it)</span></li>
+    <li><span class="n">A</span><span class="t">Appendix: word limits, banned words, decision log</span></li>
+  </ol>
+</section>
+
+<!-- 00 -->
+<section class="chapter">
+  <div class="kicker">Chapter 00</div>
+  <h1>Read this first</h1>
+  <p class="lead">Most AI-written brand decks fail the same way: every page sounds like it came from the same machine, and any page could be pasted into a competitor's deck. This playbook is the antidote.</p>
+
+  <p>It documents a set of prompts that walks one client through Section 04 of a Brand Strategy Presentation: Purpose, Vision, Values, Positioning, Value Proposition, Personality, Voice, Key Messages and a one-page Summary. A tenth prompt, the Strategy Check, audits the finished work before Creative Direction starts.</p>
+
+  <h2>Who this is for</h2>
+  <p>A solo brand designer who sells brand strategy as part of the job and wants a repeatable way to produce it. You are the decision maker. The prompts do the strategic reasoning, offer defensible routes and write client-ready copy. They never decide for you.</p>
+
+  <h2>What it assumes you already have</h2>
+  <ul>
+    <li><b>A Brand Discovery Brief and Evidence</b> from the client. Everything downstream is built from these. No brief, no strategy.</li>
+    <li><b>Earlier approved pages.</b> Positioning leans on 2.1 Target Audience, 2.2 Audience Insights, 2.3 Customer Journey, 3.1 Competitor Analysis, 3.2 Positioning Map and 3.3 Market Opportunity. Those pages are produced by earlier steps in the wider presentation. This playbook covers Section 04 and the check that follows.</li>
+    <li><b>A Brand Strategy Presentation template</b> with fixed boxes for each field, and a <b>Decisions document</b> where you log each choice.</li>
+    <li><b>One long, continuous chat</b> with an AI assistant. This matters more than anything else here. See Chapter 01.</li>
+  </ul>
+
+  <div class="box">
+    <div class="label">Mentor note</div>
+    <p>This playbook will not rescue a thin brief. The prompts are written to stop and say what is missing rather than invent filler. When they stop, believe them. Go back to the client.</p>
+  </div>
+
+  <h2>One naming correction</h2>
+  <p>Anywhere you see "1.2 Business Goals", read it as <b>1.2 Brand Goals</b>.</p>
+</section>
+
+<!-- 01 -->
+<section class="chapter">
+  <div class="kicker">Chapter 01</div>
+  <h1>How the system works</h1>
+
+  <h2>One chat, not nine</h2>
+  <p>You paste the Brand Discovery Brief and Evidence <b>once</b>, near the top of the conversation. Then you run each page prompt (4.1, 4.2, 4.3 and so on) as a new turn in the <b>same</b> chat. Every later prompt reads the brief, the evidence and every earlier approved page straight out of the chat history. Nothing is re-pasted.</p>
+  <p>This is what makes the pages agree with each other. Purpose feeds Vision. Values feed Positioning. Positioning feeds Value Proposition, and so on down the chain.</p>
+
+  <h2>The loop on every page</h2>
+  <ol>
+    <li><b>Run the prompt.</b> It returns one route or two, each with the page's exact fields filled in, plus a one-sentence "My lean".</li>
+    <li><b>Pick.</b> Take one route whole, or mix pieces from both.</li>
+    <li><b>Tell the chat what you used.</b> Type <code>Using Route 1</code> or <code>Using Route 2</code>, or say which piece came from where. If you skip this step, later pages cannot see your decision.</li>
+    <li><b>Paste into the presentation.</b> Each field goes into its fixed box.</li>
+    <li><b>Run the two quick checks</b> printed at the bottom of every output.</li>
+    <li><b>Log it.</b> One line in the Decisions document: <i>"4.x Page Name. I chose ______ because ______."</i></li>
+    <li><b>Move to the next page.</b></li>
+  </ol>
+  <p>If a route does not fit, tell the assistant what to change. It rewrites that route only. You do not start again.</p>
+
+  <h2>Routes: one or two, never padded</h2>
+  <p>Each prompt first decides whether the evidence supports <b>one</b> strong route or <b>two genuinely different</b> ones. It is told not to force a second route to look balanced. A second route only appears when it would lead to a different understanding of the business and different decisions downstream. Under each route, "Choose this if" gives a reason to pick it, never a knock on the other.</p>
+  <p>When two routes are strong, the output ends with a one-sentence lean. When they are tied, it names the single question you need to answer to break the tie.</p>
+
+  <h2>Already confirmed means done</h2>
+  <p>If you have already typed "Using Route X" for a page, re-running that page's prompt gets one short acknowledgement and nothing else. The system will not re-argue a decision you have made.</p>
+
+  <h2>The order is not optional</h2>
+  <table>
+    <tr><th>Page</th><th>Leans most on</th></tr>
+    <tr><td>4.1 Purpose</td><td>Brief, Evidence</td></tr>
+    <tr><td>4.2 Vision</td><td>Brief, 4.1</td></tr>
+    <tr><td>4.3 Core Values</td><td>Brief Section 05 (always / never), 4.1, 4.2</td></tr>
+    <tr><td>4.4 Positioning</td><td>2.1, 2.2, 2.3, 3.1, 3.2, 3.3 (primary); 4.1 to 4.3 for consistency</td></tr>
+    <tr><td>4.5 Value Proposition</td><td>4.4 (primary), 2.2, 2.3, 3.3, 4.1 to 4.3</td></tr>
+    <tr><td>4.6 Personality</td><td>4.4 and 4.5 (primary), 4.3 shapes allowed behaviour</td></tr>
+    <tr><td>4.7 Voice</td><td>4.6 (primary), Brief Section 08 Client Voice, 4.4, 4.5</td></tr>
+    <tr><td>4.8 Key Messages</td><td>4.4, 4.5, 4.6, 4.7 (primary), 2.2, 2.3</td></tr>
+    <tr><td>4.9 Summary</td><td>Only approved pages: 2.1 and 4.1 to 4.8</td></tr>
+  </table>
+</section>
+
+<!-- 02 -->
+<section class="chapter">
+  <div class="kicker">Chapter 02</div>
+  <h1>The rules every page shares</h1>
+  <p>Every page prompt carries the same spine. Understanding it saves you from fighting the output.</p>
+
+  <h2>1. Source rule: nothing from nowhere</h2>
+  <p>Each page uses only the brief, the evidence and earlier approved pages. No outside knowledge, no invented facts, capabilities or ambitions. The assistant must not silently override an approved decision. It flags conflicts instead. If the chat genuinely lacks what a page needs, it says exactly what is missing and stops.</p>
+
+  <h2>2. Fresh writing</h2>
+  <p>Earlier pages are used for facts and consistency of meaning, never for sentences, openings or phrasing. A deck where every page sounds generated is exactly what the system exists to avoid.</p>
+
+  <h2>3. Plain voice</h2>
+  <p>Write for the client, as you would say it to the founder across a table. Short sentences, mostly under 20 words and never over 30. One idea each. Active voice. No em dashes. No hedging words such as "may", "might", "aims to", "strives to". A long list of tired words is banned (full list in the Appendix), and the word "space" is never used for a category.</p>
+  <div class="pair">
+    <div class="weak"><div class="label">Weak</div>a simplified and accessible approach.</div>
+    <div class="strong"><div class="label">Strong</div>Five products. Each one does a different job. You do not have to work out the order.</div>
+  </div>
+
+  <h2>4. Hard word limits</h2>
+  <p>Every field has a target range and a <b>hard maximum</b>. Fields are pasted into fixed boxes in the deck, so going over breaks the layout. The low end of a target is a direction, not a rule: a sharp line a few words short beats one padded with filler.</p>
+  <div class="box">
+    <div class="label">Be honest about this</div>
+    <p>A language model cannot guarantee an exact word count from an instruction alone. The prompts say so themselves: <b>you</b> verify the actual count before pasting. Do not skip this. Chapter 03 explains how.</p>
+  </div>
+
+  <h2>5. The silent check</h2>
+  <p>Before answering, each prompt runs a private checklist (is it specific to this business, does it trace to evidence, is anything over its maximum, are the two routes truly different) and rewrites anything that fails. The check is never shown. You only see the result, which is why your own two quick checks at the end of each page matter.</p>
+
+  <h2>6. Swap tests</h2>
+  <p>The recurring test across the whole set is the swap. Replace the brand name with a competitor's. If the sentence still works, it is too generic. Positioning, Values, Taglines and the Strategy Check all use this same test.</p>
+</section>
+
+<!-- 4.1 -->
+<section class="chapter">
+  <div class="kicker">Page 4.1 · Step 1</div>
+  <h1>Brand Purpose</h1>
+  <p class="lead">Why the business exists beyond making money.</p>
+
+  <h2>The job</h2>
+  <p>Purpose is the enduring reason the business needs to exist, beyond what it currently sells. The assistant infers it by connecting the strongest signals: the founder's reason for starting, the customer's problem, the business reality, the market opportunity and any approved strategy. It must not just restate the founder's words or the customer's problem.</p>
+
+  <h2>Three tests it must pass</h2>
+  <ul>
+    <li><b>Range test.</b> It must still hold if the product or service range changed substantially. If it only describes what they sell today, it is a description, not a purpose.</li>
+    <li><b>Swap test.</b> If it would fit several other businesses in the category, it is wrong.</li>
+    <li><b>Founder-story test.</b> If removing the founder's name leaves a repeated anecdote instead of a business reason, it is repetition, not synthesis. Rewrite it.</li>
+  </ul>
+  <p>Banned openers: "to empower people to...", "to inspire...", "to revolutionise...", "to make the world a better place...", "to help people be their best selves...".</p>
+
+  <h2>What This Rules Out</h2>
+  <p>This is the field that keeps Purpose honest. It must name something real the business would turn down because of its purpose, even when refusing costs money. The assistant is told to work out the genuine refusal first and write the purpose it follows from. If no genuine refusal exists, the purpose is too vague, and it must not fabricate one.</p>
+  <div class="pair">
+    <div class="weak"><div class="label">Weak</div>This rules out compromising on quality. (Nobody would claim the opposite, so it rules out nothing.)</div>
+    <div class="strong"><div class="label">Strong</div>A refusal someone actually has to make, at a real cost to the business.</div>
+  </div>
+
+  <h2>Routes</h2>
+  <table>
+    <tr><th>Route</th><th>Built from</th></tr>
+    <tr><td>1 · The Founder's Reason</td><td>What they saw, what frustrated them, what they wanted to change.</td></tr>
+    <tr><td>2 · The Customer's Problem</td><td>The specific frustration the business exists to remove.</td></tr>
+  </table>
+  <p>Two routes appear only if they lead to a different understanding of why the business exists <b>and</b> to different refusals.</p>
+
+  <h2>Fields and limits</h2>
+  <table>
+    <tr><th>Field</th><th>Target words</th><th>Hard max</th></tr>
+    <tr><td>Purpose Statement</td><td class="num">30 to 35</td><td class="num">35</td></tr>
+    <tr><td>What This Rules Out</td><td class="num">18 to 22</td><td class="num">22</td></tr>
+    <tr><td>How You Will See It</td><td class="num">25 to 30</td><td class="num">30</td></tr>
+  </table>
+  <p><b>How You Will See It</b> is a concrete, pointable instance of the purpose in the real business: a product, packaging, service, process or customer experience. It is not a list of values and not visual direction.</p>
+
+  <h2>Out of scope here</h2>
+  <p>No tagline (that is 4.8), no values (4.3), no vision (4.2). Do not let purpose slide into a value proposition or inflate the business beyond the evidence.</p>
+
+  <h2>Your two checks</h2>
+  <ul>
+    <li>Would this purpose still be true if the product or service range changed completely?</li>
+    <li>Swap in another business's name. Does it still work unchanged? If yes, sharpen it.</li>
+  </ul>
+</section>
+
+<!-- 4.2 -->
+<section class="chapter">
+  <div class="kicker">Page 4.2 · Step 2</div>
+  <h1>Brand Vision</h1>
+  <p class="lead">Where the business is going, and what would prove it got there.</p>
+
+  <h2>The job</h2>
+  <p>A vision describes the future the business is trying to create: what success looks like once the business has become what the founder wants it to become. It is not today's business, not a purpose, not positioning, not a value proposition and not a tagline. It builds on the approved 4.1 Purpose and must never rewrite or contradict it.</p>
+
+  <h2>The year rule</h2>
+  <p>The statement must open <b>"By [year], [BRAND] will..."</b>. The year comes from the client's stated ambition in the brief, either directly or calculated from a stated period such as "three to five years". If the brief gives no timeframe at all, the assistant says so and stops. It does not invent a year.</p>
+
+  <h2>Not a sales target</h2>
+  <p>"Reach one million in sales" is a goal, not a vision. The question is what the business will have <i>become</i> when it gets there.</p>
+  <div class="pair">
+    <div class="weak"><div class="label">Weak</div>By 2030, we will hit ten million in revenue.</div>
+    <div class="strong"><div class="label">Strong</div>By 2030, [BRAND] is the brand people name when a friend asks what actually worked.</div>
+  </div>
+
+  <h2>Milestones must be checkable</h2>
+  <p>Each milestone has to let the founder look back and answer yes or no. Numbers and dates appear only where the brief provides them. With no numbers, a milestone can still be checkable through a concrete development such as a new market, a named retail presence, a specific launch or a defined product expansion. If the evidence supports only two credible milestones, the assistant says so rather than manufacturing a third.</p>
+  <div class="pair">
+    <div class="weak"><div class="label">Not checkable</div>Increased brand awareness.</div>
+    <div class="strong"><div class="label">Checkable</div>Stocked in at least three national retailers.</div>
+  </div>
+
+  <h2>Routes</h2>
+  <table>
+    <tr><th>Route</th><th>Built from</th></tr>
+    <tr><td>1 · Where The Business Gets To</td><td>Future position, reach, scale, markets, retail presence, recognition or role.</td></tr>
+    <tr><td>2 · What Changes Because Of It</td><td>What becomes different for customers, people served or the category because the business succeeds.</td></tr>
+  </table>
+  <p>Both must come from the client's actual ambition. Route 2 must not be made more ambitious just because it sounds more inspiring, and inferred social impact is not turned into a formal ambition unless the brief supports it.</p>
+
+  <h2>Fields and limits</h2>
+  <table>
+    <tr><th>Field</th><th>Target words</th><th>Hard max</th></tr>
+    <tr><td>Vision Statement (opens "By [year], [BRAND] will...")</td><td class="num">25 to 30</td><td class="num">30</td></tr>
+    <tr><td>Milestone 01, 02, 03</td><td class="num">8 to 12 each</td><td class="num">12</td></tr>
+  </table>
+
+  <h2>Your two checks</h2>
+  <ul>
+    <li>Does every number and date come from the client? If one appeared from nowhere, tell the assistant and it removes it.</li>
+    <li>Could you check each milestone later and get a clear yes or no?</li>
+  </ul>
+</section>
+
+<!-- 4.3 -->
+<section class="chapter">
+  <div class="kicker">Page 4.3 · Step 3</div>
+  <h1>Core Values</h1>
+  <p class="lead">Five things the business will not compromise on.</p>
+
+  <h2>Why this page fails most often</h2>
+  <p>Core Values collapses into lists like Quality, Integrity, Innovation. The prompt is built to prevent that with a reversed method, run silently:</p>
+  <ol>
+    <li>Write the <b>Rules Out</b> line first: a specific thing this business refuses to do, grounded in approved evidence.</li>
+    <li>Then name the <b>one-word value</b> that refusal comes from.</li>
+    <li>Then write what that value <b>means</b> for this brand.</li>
+  </ol>
+  <p>Never start from the word. You cannot write a specific refusal for a generic word, so a generic word fails before it gets to step 1.</p>
+
+  <h2>Banned values</h2>
+  <p>Quality, Integrity, Innovation, Excellence, Passion, Authenticity, Transparency, Trust, Respect, Commitment, Customer-first, and Simplicity on its own. They are banned because no business would claim the opposite, so they say nothing. If the evidence points toward one of these ideas, the assistant must find the specific behaviour underneath and name that. Swapping in a generic synonym is also not allowed.</p>
+
+  <h2>The Rules Out test</h2>
+  <p>For every line ask: could this be written about a competitor? If yes, the value is generic.</p>
+  <div class="pair">
+    <div class="weak"><div class="label">Weak</div>Rules out cutting corners on ingredients. (Any brand can say this.)</div>
+    <div class="strong"><div class="label">Strong</div>Rules out launching a product we cannot explain in one line on the label. (A real decision someone has to make.)</div>
+  </div>
+  <p>The strongest lines describe a real trade-off: what the business refuses even when saying yes would be easier, cheaper or commercially attractive.</p>
+
+  <h2>Values are a system</h2>
+  <p>The five should show distinct behaviours or decision boundaries, not five versions of one principle. Values must not repeat the Purpose or Vision, and must not become personality traits. Ask: what decisions would this business make differently because this value exists? If nothing, it is filler. If the evidence honestly supports fewer than five, the assistant says so and stops.</p>
+
+  <h2>Routes</h2>
+  <table>
+    <tr><th>Route</th><th>Built from</th></tr>
+    <tr><td>1 · How They Make Things</td><td>Product, craft, standards, process, what goes in and what stays out.</td></tr>
+    <tr><td>2 · How They Treat People</td><td>Customers, service, honesty, communication, what the business will and will not say or do with people.</td></tr>
+  </table>
+  <p>Two routes only if at least three of the five values are genuinely different between the sets.</p>
+
+  <h2>Fields and limits (for each of five values)</h2>
+  <table>
+    <tr><th>Field</th><th>Format</th><th>Hard max</th></tr>
+    <tr><td>Value</td><td>ONE word. Not two. Not a phrase.</td><td class="num">1</td></tr>
+    <tr><td>Meaning</td><td>10 to 12 words</td><td class="num">12</td></tr>
+    <tr><td>Rules Out</td><td>12 to 15 words</td><td class="num">15</td></tr>
+  </table>
+
+  <h2>Your two checks</h2>
+  <ul>
+    <li>Read the five value words alone, without meanings. Could they sit on a competitor's page? If yes, ask for replacements.</li>
+    <li>Does every value trace to something the client said or to a clearly supported inference? A value invented to fill the page is worse than an honest gap.</li>
+  </ul>
+</section>
+
+<!-- 4.4 -->
+<section class="chapter">
+  <div class="kicker">Page 4.4 · Step 4</div>
+  <h1>Brand Positioning</h1>
+  <p class="lead">What the brand should be known for, relative to the alternatives.</p>
+
+  <h2>The job</h2>
+  <p>This is the central market decision in Section 04: what should this brand <i>own in the customer's mind</i>? The position must connect who the brand is for, what that customer needs, what competitors already own, what gap exists, and what this business can credibly deliver. Positioning is not a description of the business, and an empty competitive space is not automatically an opportunity.</p>
+
+  <h2>Earn the position</h2>
+  <p>A position must pass three connected tests: <b>customer need</b>, <b>competitive gap</b> and <b>business capability</b>. If one is missing, the position is not defensible yet.</p>
+
+  <h2>Inputs are unusually strict</h2>
+  <p>Customer and market pages (2.x, 3.x) are the primary inputs. Purpose, Vision and Values give context and consistency only. They must never introduce a position the customer, competitor and market evidence does not support. The assistant uses only the three confirmed competitors from 3.1 and 3.2, same names, same order, and does no outside research on them.</p>
+
+  <h2>The statement shape</h2>
+  <pre>For [AUDIENCE] who [NEED/TENSION], [BRAND] is the [CATEGORY]
+that [DISTINCTIVE POSITION] because [KEY DIFFERENTIATOR].</pre>
+  <p>This is a strategic structure, not a copywriting template. Audience comes from 2.1, the need from 2.2, the position from 3.1 to 3.3. The differentiator must be something the business can actually support today.</p>
+
+  <h2>Proof</h2>
+  <p>A proof must be something the business already has: a product, process, system, documented capability or demonstrated way of working. Vague claims ("a commitment to quality", "customer-focused service") are out unless the evidence makes the specific behaviour clear. Do not force three proof points. The strongest goes in <b>Why It's Different</b>.</p>
+
+  <h2>Routes</h2>
+  <table>
+    <tr><th>Route</th><th>Where the difference lives</th></tr>
+    <tr><td>1 · Different In What It Does</td><td>The offer itself: mechanic, system, process, product structure, service model. The belief follows from the offer.</td></tr>
+    <tr><td>2 · Different In What It Believes</td><td>A clear point of view that challenges or reframes how the category normally works. The offer is the evidence for the belief.</td></tr>
+  </table>
+  <p>Two routes only if the brand would behave differently and the Position to Own itself would differ.</p>
+
+  <h2>Fields and limits</h2>
+  <table>
+    <tr><th>Field</th><th>Target words</th><th>Hard max</th></tr>
+    <tr><td>Competitor 01, 02, 03 Name</td><td class="num">1 to 3</td><td class="num">3</td></tr>
+    <tr><td>Competitor 01, 02, 03 Owns</td><td class="num">3 to 5</td><td class="num">5</td></tr>
+    <tr><td>Positioning Statement</td><td class="num">40 to 50</td><td class="num">50</td></tr>
+    <tr><td>Why It's Different</td><td class="num">30 to 35</td><td class="num">35</td></tr>
+    <tr><td>Position to Own</td><td class="num">2 to 4</td><td class="num">4</td></tr>
+  </table>
+  <p>"Owns" means what a competitor is <i>known for</i>, not what they sell. Position to Own is the compressed territory the designer holds in their head. It is not a tagline, not a sentence, not a category label.</p>
+  <p>The words "best", "leading", "unique" and "premium" are banned unless the evidence gives them a specific, defensible meaning.</p>
+
+  <h2>Your two checks</h2>
+  <ul>
+    <li>Cover the brand name and read the statement aloud. Could a competitor's name replace it and still make sense? If yes, it is too generic.</li>
+    <li>Is every proof or differentiator something the business already has? If it is aspirational, it is not proof.</li>
+  </ul>
+</section>
+
+<!-- 4.5 -->
+<section class="chapter">
+  <div class="kicker">Page 4.5 · Step 5</div>
+  <h1>Value Proposition</h1>
+  <p class="lead">What the customer gets from choosing the brand.</p>
+
+  <h2>The job</h2>
+  <p>Positioning says what the brand should be known for. This page translates that position into a clear customer promise: what they get, what follows from it, why to believe it, and why to choose this brand over the alternatives. It must not repeat the positioning statement, become a feature list, or make every benefit another version of the Promise.</p>
+
+  <h2>The Promise: one commitment</h2>
+  <p>One clear commitment. Not a list. Not three things joined with "and".</p>
+  <div class="pair">
+    <div class="weak"><div class="label">Weak</div>Quality products, great service and honest pricing. (Three promises, so none.)</div>
+    <div class="strong"><div class="label">Strong</div>Every product does one job, and the label tells you which.</div>
+  </div>
+
+  <h2>Four benefits</h2>
+  <p>Each is a distinct customer gain that follows from the Promise: practical, meaningful, supported by approved audience insights. Not four features, and not the Promise reworded. The assistant does not invent a fourth just to fill the box.</p>
+
+  <h2>Reason to Believe</h2>
+  <p>This is where the Promise stops being marketing. Use real evidence: a product, process, system, documented fact or demonstrated way of working. If the evidence is weak, the assistant says so plainly instead of writing something that sounds convincing.</p>
+  <div class="pair">
+    <div class="weak"><div class="label">Not evidence</div>We are committed to quality.</div>
+    <div class="strong"><div class="label">Evidence</div>Every formula is tested for eight weeks before it ships, and the results go on the pack.</div>
+  </div>
+
+  <h2>Why Choose Us</h2>
+  <p>Answers "why this brand instead of the alternatives?" It uses the competitor analysis and the approved position, and does not just summarise the benefits. No claim of superiority without evidence.</p>
+
+  <h2>Routes</h2>
+  <table>
+    <tr><th>Route</th><th>The Promise focuses on</th></tr>
+    <tr><td>1 · The Outcome</td><td>What the customer ends up with: the result, change or state they reach.</td></tr>
+    <tr><td>2 · The Experience</td><td>What it is like getting there: ease, effort, process or fit into the customer's life.</td></tr>
+  </table>
+  <p>Both can be true. The designer is choosing which to lead with. Two routes appear only if the Promise and at least three of four benefits differ, and the client's website would say meaningfully different things.</p>
+
+  <h2>Fields and limits</h2>
+  <table>
+    <tr><th>Field</th><th>Target words</th><th>Hard max</th></tr>
+    <tr><td>The Promise</td><td class="num">15 to 18</td><td class="num">18</td></tr>
+    <tr><td>Benefit 01 to 04</td><td class="num">6 to 8 each</td><td class="num">8</td></tr>
+    <tr><td>Reason to Believe</td><td class="num">30 to 35</td><td class="num">35</td></tr>
+    <tr><td>Why Choose Us</td><td class="num">25 to 30</td><td class="num">30</td></tr>
+  </table>
+  <p>No invented features, results, percentages or timeframes. Do not promise something the business cannot deliver consistently.</p>
+</section>
+
+<!-- 4.6 -->
+<section class="chapter">
+  <div class="kicker">Page 4.6 · Step 6</div>
+  <h1>Brand Personality</h1>
+  <p class="lead">How the brand behaves.</p>
+
+  <h2>The job</h2>
+  <p>Personality is not a list of attractive adjectives. It is the set of human qualities that consistently shape how the brand behaves, presents itself and feels in use. It must follow from the approved strategy, never from the designer's personal taste. Positioning (4.4) and Value Proposition (4.5) are the direct inputs. Core Values define which behaviours are allowed and rejected.</p>
+
+  <h2>Traits and their boundaries</h2>
+  <p>Five traits, each paired in order with a <b>Never Become</b>: the close cousin of the trait, what it turns into when pushed too far or handled badly.</p>
+  <div class="pair">
+    <div class="strong"><div class="label">Good pairs</div>Confident, never smug.<br>Warm, never soft.<br>Direct, never blunt.<br>Calm, never dull.</div>
+    <div class="weak"><div class="label">Bad pair</div>Confident, never boring. (Boring is not the failure mode of confidence.)</div>
+  </div>
+  <p>Where the client listed words to avoid in the brief, they are used where they create a meaningful boundary. The pairs must form one coherent behavioural system, not five positives with five unrelated negatives.</p>
+
+  <h2>Visually and Verbally</h2>
+  <p>Both lines must be actionable constraints. "Clean and modern" and "friendly and clear" give no direction. Direction is welcome, but this is not a creative direction system: no exact fonts, palettes, layouts or photography systems unless the approved strategy requires it.</p>
+
+  <h2>Archetypes come last</h2>
+  <p>The Primary Archetype is developed <b>after</b> the traits and boundaries, as shorthand for what is already there, never the other way round. The assistant picks the archetype that fits the evidence, not the one that sounds most attractive. If none is defensible, it writes N/A and says why.</p>
+  <p>A <b>Secondary Archetype</b> is optional and stays N/A by default. It is added only when the Primary cannot resolve a real tension: one group of traits pulls toward one archetype and a different, equally evidenced group pulls toward another. The test: name the specific traits the Primary fails to account for, and check the Secondary accounts for exactly those. If you cannot name the split, leave it N/A.</p>
+
+  <h2>Routes</h2>
+  <p>The prompt suggests example directions only (for instance <i>Leads With Certainty</i> versus <i>Leads With Warmth</i>) and warns against forcing them. Two routes appear only if at least three traits differ, the Never Become boundaries change meaningfully, and the Visually and Verbally lines instruct differently.</p>
+
+  <h2>Fields and limits</h2>
+  <table>
+    <tr><th>Field</th><th>Target words</th><th>Hard max</th></tr>
+    <tr><td>Personality Trait 01 to 05</td><td class="num">1 to 2 each</td><td class="num">2</td></tr>
+    <tr><td>Never Become 01 to 05</td><td class="num">1 to 2 each</td><td class="num">2</td></tr>
+    <tr><td>Visually</td><td class="num">10 to 15</td><td class="num">15</td></tr>
+    <tr><td>Verbally</td><td class="num">10 to 15</td><td class="num">15</td></tr>
+    <tr><td>Primary Archetype (or N/A)</td><td class="num">1 to 2</td><td class="num">2</td></tr>
+    <tr><td>Secondary Archetype (N/A by default)</td><td class="num">1 to 2</td><td class="num">2</td></tr>
+  </table>
+  <p>The words "modern", "premium", "innovative", "friendly" and "bold" are not allowed alone unless the strategy gives them a specific meaning.</p>
+</section>
+
+<!-- 4.7 -->
+<section class="chapter">
+  <div class="kicker">Page 4.7 · Step 7</div>
+  <h1>Brand Voice</h1>
+  <p class="lead">How the personality sounds in writing.</p>
+
+  <h2>The job</h2>
+  <p>Voice is the writing behaviour of the approved 4.6 Personality. Positioning and Value Proposition decide what the brand needs to communicate. The client's own words from Brief Section 08 (Client Voice) keep the result believable.</p>
+
+  <h2>Translate, don't repeat</h2>
+  <p>Do not just copy personality words into voice principles. If the personality says direct, show how directness appears in language. If it says warm, show how warmth appears in language.</p>
+
+  <h2>Use the founder's words as evidence, not copy</h2>
+  <p>Look for patterns in Section 08: sentence style, directness, word choice, formality, how they explain the business, how they talk about customers. Never copy their sentences into the output. If a proposed principle clearly contradicts how the founder naturally speaks, reconsider it. The goal is a usable voice that feels believable for this business, not a copy of the founder.</p>
+
+  <h2>Principles are writing rules</h2>
+  <p>Each principle must tell a writer what to do. Keep the principle name short and put the instruction in the Meaning.</p>
+  <div class="pair">
+    <div class="weak"><div class="label">Not useful</div>Clear: we communicate clearly.</div>
+    <div class="strong"><div class="label">Useful</div>Clear: one idea per sentence, and explain unfamiliar terms plainly.</div>
+  </div>
+
+  <h2>One voice, shifting tone</h2>
+  <p>The five principles apply everywhere. The four channel boxes (Social, Website, Email, In Person) describe small shifts in delivery, not different voices. If Social and Website read like two different brands, that is two voices. Rewrite them.</p>
+
+  <h2>Words We Avoid</h2>
+  <p>Six words that go to whoever writes the client's website. They must be specific to this brand: words that conflict with the personality or positioning, make the brand sound like its competitors, or are overused in the category. The client's own avoid-words from the brief come first when still appropriate. Generic consultant jargon is a waste of the list.</p>
+
+  <h2>Routes</h2>
+  <p>Example directions only: <i>How It Explains</i> (the writing removes confusion) and <i>How It Reassures</i> (the writing makes the customer feel safe choosing). Two routes only if at least three principles differ and a copywriter would write a meaningfully different product page while the brand still sounds like the same brand.</p>
+
+  <h2>Fields and limits</h2>
+  <table>
+    <tr><th>Field</th><th>Target words</th><th>Hard max</th></tr>
+    <tr><td>Voice Principle 01 to 05</td><td class="num">1 to 2 each</td><td class="num">2</td></tr>
+    <tr><td>Meaning 01 to 05</td><td class="num">10 to 12 each</td><td class="num">12</td></tr>
+    <tr><td>Social, Website, Email, In Person</td><td class="num">7 to 10 each</td><td class="num">10</td></tr>
+    <tr><td>Words We Avoid 01 to 06</td><td class="num">one word each where possible</td><td class="num">n/a</td></tr>
+  </table>
+  <p>No example copy, taglines or slogans on this page. That is 4.8's job. Note also that the banned-word list governs how the <i>assistant writes the answer</i>. It does not stop the brand's own Words We Avoid list from containing other words.</p>
+</section>
+
+<!-- 4.8 -->
+<section class="chapter">
+  <div class="kicker">Page 4.8 · Step 8</div>
+  <h1>Key Messages</h1>
+  <p class="lead">What the brand actually says out loud.</p>
+
+  <h2>The job</h2>
+  <p>This is the first page where the strategy becomes customer-facing language. It expresses the approved strategy and creates no new one. The direct inputs are 4.4, 4.5, 4.6 and 4.7, with Audience Insights and Customer Journey deciding what should be said and what action makes sense.</p>
+
+  <h2>Taglines: develop many, show one</h2>
+  <p>The assistant privately develops several genuinely different directions: the brand's point of view, its distinctive promise, the unusual way it solves the problem, the customer's desired shift, or the Position to Own. It rejects any that turn generic, motivational, descriptive or interchangeable, and outputs only the strongest survivor. You never see candidates or scoring.</p>
+  <p>Lines that mainly describe the category or state a generic benefit are rejected. Examples of failure patterns: "Better [category]", "[Category], made simple", "Made for [audience]", "Designed for life", "Simply better", "Made with care", "Built for you", "Feel the difference", "Do more", "Less is more".</p>
+
+  <h2>Five tests, all must pass</h2>
+  <table>
+    <tr><th>Test</th><th>The question</th></tr>
+    <tr><td>1 · Ownability</td><td>Could a competitor use it unchanged?</td></tr>
+    <tr><td>2 · Specific association</td><td>What exact idea does a customer link to this brand? If it is only "quality", "care", "confidence", "simplicity" or "innovation", reject.</td></tr>
+    <tr><td>3 · Strategic trace</td><td>Can you point to an approved idea in Positioning, Value Proposition, Personality or Position to Own that it compresses?</td></tr>
+    <tr><td>4 · Category distance</td><td>Does it separate the brand from normal category language?</td></tr>
+    <tr><td>5 · Memorability</td><td>Short, natural, distinctive and clear without a paragraph of explanation?</td></tr>
+  </table>
+  <p>Two further tests: <b>cover-up</b> (cover the brand name, would it still read as a generic category statement?) and <b>reverse</b> (what would the brand be giving up if it stopped standing for this idea? "Nothing specific" means rewrite). No pun or rhyme is required. A plain line with a specific idea beats a clever line with nothing ownable behind it.</p>
+  <div class="box">
+    <div class="label">The honest exit</div>
+    <p>If no candidate passes all five tests, the assistant does not invent one. It says the approved strategy does not yet contain a distinctive idea strong enough to support a credible tagline, and stops. Treat that as a finding about your strategy, not a malfunction.</p>
+  </div>
+
+  <h2>One-Liner</h2>
+  <p>Answers "what does this brand do?" in plain language the founder can say aloud without sounding like they are reading a strategy document. It does not repeat the Positioning Statement and is not a slogan.</p>
+
+  <h2>Lead With, Then Prove, Then Ask</h2>
+  <p>These form a chain, not a list. <b>Lead With</b> earns attention. <b>Then Prove</b> removes the doubt Lead With creates. <b>Then Ask</b> gives a clear next action. Check the chain: what does Lead With make the customer believe, what doubt could that create, does Then Prove answer <i>that</i> doubt, and once resolved, does Then Ask make sense? The doubt must come from approved Audience Insights, not an invented objection. Avoid defaulting to "Discover more", "Learn more" or "Get started" unless the context makes them meaningful.</p>
+
+  <h2>Routes</h2>
+  <p>Example directions: <i>Lead With The Problem</i> (name the frustration, then introduce the brand) and <i>Lead With The Difference</i> (open with what makes the brand different, then connect it to the problem). Two routes only if the Tagline and Lead With truly differ and the client's homepage would open differently.</p>
+
+  <h2>Fields and limits</h2>
+  <table>
+    <tr><th>Field</th><th>Target words</th><th>Hard max</th></tr>
+    <tr><td>Tagline</td><td class="num">3 to 5</td><td class="num">7</td></tr>
+    <tr><td>One-Liner</td><td class="num">25 to 30</td><td class="num">30</td></tr>
+    <tr><td>Lead With</td><td class="num">10 to 15</td><td class="num">15</td></tr>
+    <tr><td>Then Prove</td><td class="num">12 to 16</td><td class="num">16</td></tr>
+    <tr><td>Then Ask</td><td class="num">7 to 10</td><td class="num">10</td></tr>
+  </table>
+</section>
+
+<!-- 4.9 -->
+<section class="chapter">
+  <div class="kicker">Page 4.9 · Step 9</div>
+  <h1>Brand Strategy Summary</h1>
+  <p class="lead">All approved decisions on one page.</p>
+
+  <h2>The job</h2>
+  <p>This is the final page. It has <b>no routes</b>: every strategic decision was made earlier, so you get one summary, not two versions. It runs once, after every prior page is approved.</p>
+
+  <h2>Nothing new</h2>
+  <p>Every field must come from an approved page, or from a direct combination of approved ideas whose meaning does not change. The assistant may shorten and simplify. It may not add a new claim, promise, positioning, audience definition, trait or voice principle. A phrase it cannot trace back is removed. It may not strengthen claims either: "plans to" does not become a present-tense fact, and an aspiration does not become an established capability.</p>
+
+  <h2>Where each field comes from</h2>
+  <table>
+    <tr><th>Field</th><th>Source</th><th>Target</th><th>Max</th></tr>
+    <tr><td>Purpose</td><td>4.1</td><td class="num">20 to 25</td><td class="num">25</td></tr>
+    <tr><td>Vision</td><td>4.2</td><td class="num">20 to 25</td><td class="num">25</td></tr>
+    <tr><td>Audience</td><td>2.1</td><td class="num">8 to 12</td><td class="num">12</td></tr>
+    <tr><td>Position to Own</td><td>4.4</td><td class="num">2 to 4</td><td class="num">4</td></tr>
+    <tr><td>Promise</td><td>4.5</td><td class="num">10 to 15</td><td class="num">15</td></tr>
+    <tr><td>Core Values</td><td>4.3</td><td class="num">five words, comma separated</td><td class="num">5 words</td></tr>
+    <tr><td>Personality</td><td>4.6 (five traits compressed, plus Primary and any approved Secondary Archetype)</td><td class="num">6 to 9</td><td class="num">9</td></tr>
+    <tr><td>Voice</td><td>4.7</td><td class="num">15 to 20</td><td class="num">20</td></tr>
+    <tr><td>Tagline</td><td>4.8</td><td class="num">3 to 5</td><td class="num">7</td></tr>
+    <tr><td>One-Liner</td><td>4.8</td><td class="num">20 to 25</td><td class="num">25</td></tr>
+    <tr><td>Reason to Believe</td><td>4.5</td><td class="num">20 to 25</td><td class="num">25</td></tr>
+  </table>
+
+  <h2>If approved pages disagree</h2>
+  <p>While compressing, the assistant may discover that two approved pages conflict, such as a Personality that does not match the Voice, or a Promise that conflicts with the Positioning. It must not soften the summary and must not silently pick a side. It <b>names the two pages</b>, explains the conflict briefly, and gives the summary anyway using the approved content as written. You then fix the original page, rather than having the problem hidden in the summary.</p>
+
+  <div class="box">
+    <div class="label">Heads up</div>
+    <p>The One-Liner is 25 to 30 words on 4.8 but 20 to 25 on 4.9, and Reason to Believe is 30 to 35 on 4.5 but 20 to 25 here. So the Summary version is a shortened form. When it must stay true to the approved wording, accuracy beats novelty: keep an approved phrase if it is the clearest expression of the decision.</p>
+  </div>
+
+  <p>When 4.9 is approved, the next step is the Strategy Check.</p>
+</section>
+
+<!-- Strategy check -->
+<section class="chapter">
+  <div class="kicker">Final gate</div>
+  <h1>The Strategy Check</h1>
+  <p class="lead">Is Sections 01 to 04 ready for Creative Direction?</p>
+
+  <h2>A different kind of prompt</h2>
+  <p>The page prompts write brand copy. The Strategy Check does not. You export the Brand Strategy Presentation to PDF and upload it. The assistant reads <b>only Sections 01 to 04</b> and reports high-impact problems. It deliberately ignores Section 05 and anything after it, even if it is complete, blank or from another brand. The latest PDF is the source of truth, not old drafts and not what you meant to write.</p>
+
+  <h2>What it looks for</h2>
+  <table>
+    <tr><th>Problem type</th><th>Example</th></tr>
+    <tr><td>Contradiction</td><td>Personality vs Positioning, Voice vs Personality, Vision vs Purpose, Key Messages communicating a different idea than Positioning.</td></tr>
+    <tr><td>Weak differentiation</td><td>The brand does not separate from the three approved competitors in a way that matters.</td></tr>
+    <tr><td>Unsupported claim</td><td>Invented proof, capabilities, milestones or market facts. Reasonable inference is allowed. The rule: don't invent, do infer when supported.</td></tr>
+    <tr><td>Strategic repetition</td><td>Reason to Believe repeating the Promise, benefits restating the Promise, the Summary introducing a new idea.</td></tr>
+    <tr><td>High-impact genericness</td><td>An idea that could move to another brand with only the name changed, and that materially weakens the strategy.</td></tr>
+  </table>
+
+  <h2>The filter that keeps it useful</h2>
+  <p>Before reporting anything, the assistant asks whether fixing it would materially change the strategy, customer interpretation, positioning, claims, communication or Creative Direction. If not, it is ignored: wording preferences, punctuation, layout, small word-count differences. This is explicitly not a perfection audit.</p>
+  <p>On the first check it reports <b>at most three issues</b>, aiming for fewer. One real problem gets one report. Zero gets zero. If several symptoms share one cause, they are combined.</p>
+
+  <h2>Every issue is a repair ticket</h2>
+  <pre>1. [SHORT PROBLEM TITLE]
+
+CHANGE THIS
+Page:  [exact page/section]
+Field: [exact field]
+
+Current:
+"[exact current wording]"
+
+Problem:
+[1-2 short sentences]
+
+Replace with:
+"[paste-ready replacement]"
+
+Why:
+[1 short sentence on the consequence]</pre>
+  <p>When the right fix is restoring an earlier approved decision, the replacement names its source page and field explicitly, so it does not look like new strategy. When there is a real problem but not enough evidence to write a safe fix, the assistant says <b>"Do not rewrite this yet"</b>, states exactly what evidence is missing from Sections 01 to 04, and says what you need to verify. It never invents a replacement.</p>
+  <p>When two approved decisions conflict, it preserves whichever existing decision best fits the overall chain and recommends the smallest correction. It never invents a third direction.</p>
+
+  <h2>The recheck</h2>
+  <p>After you make <i>only the listed changes</i>, export a new PDF and upload it in the same chat. The earlier report is a checklist and the new PDF is the truth. Each previous issue is marked <b>FIXED</b> or <b>STILL OPEN</b>. It reports full detail only for still-open issues, plus any genuinely new high-impact problem your changes caused. It never reopens fixed issues and never goes looking for optional improvements.</p>
+  <p>When everything is resolved, it ends with:</p>
+  <pre>STRATEGY CHECK: CLEAR
+All previous fixes are complete.
+No new high-impact issues found in Sections 01 to 04.
+CLEARED FOR CREATIVE DIRECTION.</pre>
+  <p>Then it stops. The goal is not perfect wording. It is a coherent, differentiated, evidence-supported foundation for Creative Direction.</p>
+</section>
+
+<!-- 03 failure modes -->
+<section class="chapter">
+  <div class="kicker">Chapter 03</div>
+  <h1>Where this system can fail</h1>
+  <p class="lead">A playbook that only sells you the system is useless. These are the real weak points, taken from how the prompts are built, and what to do about each.</p>
+
+  <h2>1. Word counts are not guaranteed</h2>
+  <p>The prompts state this themselves. A hard maximum in an instruction is a request, not an enforcement. <b>Fix:</b> count every field before pasting. Paste the output into a word counter or use a quick script. Over the max means ask the assistant to cut it, not "trim it yourself and move on", because the shorter version has to keep its meaning.</p>
+
+  <h2>2. Everything depends on one long chat</h2>
+  <p>The design assumes the brief, evidence and all approved pages stay readable in the conversation. If you start a new chat, trim history, or the conversation grows long enough for earlier content to be summarised or dropped, later pages lose their inputs and can drift or contradict earlier decisions. <b>Fix:</b> keep the Decisions document as your own record. If you must start a new chat, re-paste the brief, the evidence and every approved page before running the next prompt.</p>
+
+  <h2>3. "Using Route X" is easy to forget</h2>
+  <p>The next page only knows what you decided if you said so in the chat. A forgotten confirmation means the assistant may build on a route you did not choose. <b>Fix:</b> make the confirmation the first thing you do after pasting into the deck, every time.</p>
+
+  <h2>4. You can approve a weak page and bury the problem</h2>
+  <p>Because every later page treats approved pages as settled, an early mistake compounds. A vague Purpose produces vague Values, which produce a generic Position. <b>Fix:</b> apply the Rules Out test seriously on 4.1 and 4.3. Those two fields are the earliest filter for generic thinking. The Strategy Check catches contradictions and generic ideas late. Do not rely on it to rescue early pages.</p>
+
+  <h2>5. A stop is information, not an error</h2>
+  <p>The prompts will stop and say what is missing: no timeframe for the Vision, fewer than five honest Values, no tagline that passes the tests. The temptation is to coax something out anyway. Don't. <b>Fix:</b> take the missing item back to the client, or accept the gap.</p>
+
+  <h2>6. Two routes do not mean two good options</h2>
+  <p>A second route appears only when the evidence supports one, but you should still check. If both routes read as the same idea in different words, say so and ask for a single route. The prompts' own test is whether the designer would make meaningfully different decisions depending on the route.</p>
+
+  <h2>7. Earlier-section pages are outside this repo</h2>
+  <p>4.4 to 4.8 rely on pages 2.1 to 3.3, and 4.9 relies on 2.1. Those prompts are not part of the Section 04 set. If those pages are weak, Section 04 inherits the weakness. Check them before you start.</p>
+
+  <h2>8. Your own review is the last defence</h2>
+  <p>The assistant's silent self-check is hidden by design. You cannot audit it. Use the two quick checks at the end of every page, and treat the Strategy Check as the final gate, not the first time you read your own work critically.</p>
+</section>
+
+<!-- Appendix -->
+<section class="chapter">
+  <div class="kicker">Appendix</div>
+  <h1>Reference</h1>
+
+  <h2>A. All hard word limits</h2>
+  <table>
+    <tr><th>Page</th><th>Field</th><th>Hard max</th></tr>
+    <tr><td rowspan="3">4.1</td><td>Purpose Statement</td><td class="num">35</td></tr>
+    <tr><td>What This Rules Out</td><td class="num">22</td></tr>
+    <tr><td>How You Will See It</td><td class="num">30</td></tr>
+    <tr><td rowspan="2">4.2</td><td>Vision Statement</td><td class="num">30</td></tr>
+    <tr><td>Milestones 01 to 03</td><td class="num">12 each</td></tr>
+    <tr><td rowspan="3">4.3</td><td>Value (x5)</td><td class="num">1 word</td></tr>
+    <tr><td>Meaning (x5)</td><td class="num">12</td></tr>
+    <tr><td>Rules Out (x5)</td><td class="num">15</td></tr>
+    <tr><td rowspan="5">4.4</td><td>Competitor Name (x3)</td><td class="num">3</td></tr>
+    <tr><td>Competitor Owns (x3)</td><td class="num">5</td></tr>
+    <tr><td>Positioning Statement</td><td class="num">50</td></tr>
+    <tr><td>Why It's Different</td><td class="num">35</td></tr>
+    <tr><td>Position to Own</td><td class="num">4</td></tr>
+    <tr><td rowspan="4">4.5</td><td>The Promise</td><td class="num">18</td></tr>
+    <tr><td>Benefits 01 to 04</td><td class="num">8 each</td></tr>
+    <tr><td>Reason to Believe</td><td class="num">35</td></tr>
+    <tr><td>Why Choose Us</td><td class="num">30</td></tr>
+    <tr><td rowspan="4">4.6</td><td>Traits and Never Become (x5 each)</td><td class="num">2 each</td></tr>
+    <tr><td>Visually, Verbally</td><td class="num">15 each</td></tr>
+    <tr><td>Primary Archetype</td><td class="num">2</td></tr>
+    <tr><td>Secondary Archetype</td><td class="num">2</td></tr>
+    <tr><td rowspan="3">4.7</td><td>Voice Principles (x5)</td><td class="num">2 each</td></tr>
+    <tr><td>Meanings (x5)</td><td class="num">12 each</td></tr>
+    <tr><td>Social, Website, Email, In Person</td><td class="num">10 each</td></tr>
+    <tr><td rowspan="5">4.8</td><td>Tagline</td><td class="num">7</td></tr>
+    <tr><td>One-Liner</td><td class="num">30</td></tr>
+    <tr><td>Lead With</td><td class="num">15</td></tr>
+    <tr><td>Then Prove</td><td class="num">16</td></tr>
+    <tr><td>Then Ask</td><td class="num">10</td></tr>
+  </table>
+  <p class="cap">4.9 limits are in the 4.9 chapter.</p>
+
+  <h2>B. Words and phrases the assistant will not write</h2>
+  <p><b>Words:</b> empower, elevate, unlock, resonate, seamless, holistic, curated, bespoke, leverage, robust, ecosystem, landscape, solution, offering, journey, transformative, innovative, disruptive, best-in-class, cutting-edge, value-add, synergy, streamline, optimise, consumer, demographic, authentic, passionate, dedicated.</p>
+  <p><b>Phrases:</b> "committed to excellence", "more than just a", "at its core", "in today's market", "we don't just X, we Y".</p>
+  <p><b>Hedges:</b> may, might, could potentially, arguably, aims to, seeks to, strives to, tends to, it is worth noting.</p>
+  <p><b>Style:</b> no em dashes. Say "people" or "customers", never "consumers". Never call a category a "space".</p>
+
+  <h2>C. The shape of every page's output</h2>
+  <pre>## ROUTE 1 - [short route name]
+**Choose this if:** [one line]
+[the page's fields, in order]
+
+---
+
+## ROUTE 2 - [short route name]      (only if truly different)
+...
+
+**My lean:** Route X - [one sentence, strategic reason]</pre>
+
+  <h2>D. Decision log template</h2>
+  <pre>4.1 Brand Purpose .... I chose ______ because ______.
+4.2 Brand Vision ..... I chose ______ because ______.
+4.3 Core Values ...... I chose ______ because ______.
+4.4 Positioning ...... I chose ______ because ______.
+4.5 Value Prop ....... I chose ______ because ______.
+4.6 Personality ...... I chose ______ because ______.
+4.7 Voice ............ I chose ______ because ______.
+4.8 Key Messages .... I chose ______ because ______.
+Strategy Check ...... Issues found: __   Cleared on: ______</pre>
+
+  <h2>E. Before-you-start checklist</h2>
+  <ul>
+    <li>Brand Discovery Brief complete, including Section 05 (always / never) and Section 08 (Client Voice).</li>
+    <li>Evidence collected and pasted once at the top of a fresh chat.</li>
+    <li>Pages 2.1 to 3.3 approved and available in that same chat.</li>
+    <li>Presentation template and Decisions document open.</li>
+    <li>A word counter ready.</li>
+  </ul>
+</section>
+
+</body>
+</html>
